@@ -1,4 +1,4 @@
 SELECT DISTINCT
-    job_title_short
+    job_xountry
 FROM
     job_posting_fact;
