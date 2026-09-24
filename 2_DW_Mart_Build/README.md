@@ -2,3 +2,4 @@
 
 TODO: File this in
 
+![Data Warehouse Project Overview](./Images/1_2_Data_Warehouse.png)
