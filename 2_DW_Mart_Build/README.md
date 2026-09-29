@@ -4,4 +4,5 @@ TODO: File this in
 
 ![Data Warehouse Project Overview](./Images/1_2_Data_Warehouse.png)
 
-![Data Warehouse and Mart Architecture](./Images/2_DW_Mart_Build_Project.png)
+
+![Data Pipeline Architecture](./Images/1_2_Project2_Data_Pipeline.png)
