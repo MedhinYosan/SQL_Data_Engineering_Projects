@@ -98,7 +98,7 @@ Priority role tracking with incremental updates using MERGE operations.
 Company hiring trends by role, location, and month.
 ### [2_WH_Mart_Build/](/2_DW_Mart_Build/) - Company Mart - Data Warehouse & Mart
 ![Company Mart](Images/1_2_Company_Mart.png)
-- **SQL File:** 07_create_company_mart.sql – Builds company hiring trends mart (optional)
+- **SQL File:** [`07_create_company_mart.sql`](./07_create_company_mart.sql) – Builds company hiring trends mart (optional)
 - **Purpose:** Company hiring trends analysis by role, location, and month
 - **Grain:** company_id + job_title_short_id + location_id + month_start_date
 - **Key Features:** Bridge tables for many-to-many relationships (company-location, job title hierarchies)
