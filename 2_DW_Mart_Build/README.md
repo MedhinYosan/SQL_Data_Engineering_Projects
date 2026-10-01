@@ -69,8 +69,7 @@ The data warehouse implements a star schema with company_dim, skills_dim, job_po
 Denormalized table with all dimensions for ad-hoc queries.
 
 ### [2_WH_Mart_Build/](/2_DW_Mart_Build/) - Flat Mart - Data Warehouse & Mart
-![Flat Mart](Images/1_2_Flat_mart.png)
-
+![Flat Mart](Images/1_2_Flat_Mart.png)
 - **SQL File:** [`03_create_flat_mart.sql`](./03_create_flat_mart.sql) – Builds denormalized table with all dimensions joined
 - **Purpose:** Denormalized table for quick ad-hoc queries
 - **Grain:** One row per job posting with all dimensions joined
