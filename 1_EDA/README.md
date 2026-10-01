@@ -3,8 +3,27 @@
 
 ![Project 1 Overview](Images/1_1_Project1_EDA.png)
 
+A SQL project analyzing the data engineer job market using real world job posting data. It demonstrates my ability to write production-quality analytical SQL, design efficient queries, and turn business questions into data-driven insights.
 
-=================================================================
+###  Executive Summary
+- ✅ **Project scope:** Built **3 analytical queries** that answer key questions about the data engineer job market
+- ✅ **Data modeling:** Used **multi-table joins** across fact and dimension tables to extract insights
+- ✅ **Analytics:** Applied **aggregations, filtering, and sorting** to find top skills by demand, salary, and overall value
+- ✅ **Outcomes:** Delivered **actionable insights** on SQL/Python dominance, cloud trends, and salary patterns
+
+If you only have a minute, review thise:
+
+1. [`01_top_demanded_skills.sql`](./01_top_demanded_skills.sql)– demand analysis with multi-table joins
+2. [`02_top_paying_skills.sql`](./01_top_paying_skills.sql) – salary analysis with aggregations
+3. [`03_optimal_skills.sql`](./01_optimal_skills.sql) – combined demand/salary optimization query
+
+## Problem & Context
+Job market analysts need to answer questions like:
+
+- Most in-demand: Which skills are most in-demand for data engineers?
+- Highest paid: Which skills command the highest salaries?
+- Best trade-off: What is the optimal skill set balancing demand and compensation?
+This project analyzes a data warehouse built using a star schema design. The warehouse structure consists of:
 ## SQL Queries
 
 ## SQL Queries
@@ -26,7 +45,7 @@ Jump to:
 2. [`02_top_paying_skills.sql`](./02_top_paying_skills.sql) – Salary analysis with aggregations
 
 3. [`03_optimal_skills.sql`](./03_optimal_skills.sql) – Combined demand and salary optimization
-==============================================================
+
 # Exploratory Data Analysis w/ SQL: Job Market Analysis
 A SQL project analyzing the data engineer job
 market using real world job posting data. It
@@ -59,28 +78,28 @@ and salary patterns
 
 Job market analysts need to answer questions like:
 
-- e ** Most in-demand :** *Which skills are most
-in-demand for data engineers ?*
-- e ** Highest paid :** *Which skills command the
-highest salaries ?*
-- 44 ** Best trade-off :** *What is the optimal
-skill set balancing demand and compensation ?*
+- **Most in-demand:** *Which skills are most
+in-demand for data engineers?*
+- **Highest paid:** *Which skills command the
+highest salaries?*
+- **Best trade-off:** *What is the optimal
+skill set balancing demand and compensation?*
 
-This project analyzes a ** data warehouse ** built
+This project analyzes a **data warehouse** built
 using a star schema design. The warehouse
 structure consists of:
 
 ![Data Warehouse](Images/1_2_Data_Warehouse.png)
 
-- ** Fact Table :** `ob_postings_fact` - Central
+- **Fact Table:** `ob_postings_fact` - Central
 table containing job posting details (job titles,
 locations, salaries, dates, etc.)
-- ** Dimension Tables :**
-- `company_dim` - Company information linked to
+- **Dimension Tables:**
+  - `company_dim` - Company information linked to
 job postings
--`skills_dim` - Skills catalog with skill names
+  - `skills_dim` - Skills catalog with skill names
 and types
-- ** Bridge Table :** `skills_job_dim` - Resolves
+- **Bridge Table:** `skills_job_dim` - Resolves
 the many-to-many relationship between job postings
 and skills
 
@@ -92,17 +111,19 @@ engineerina roles.
 
 ## Tech Stack
 
-- ** Query Engine :** DuckDB for fast OLAP-style
+- **Query Engine:** DuckDB for fast OLAP-style
 analytical queries
-** Language :** SQL (ANSI-style with analytical
+- **Language:** SQL (ANSI-style with analytical
 functions)
-** Data Model :** Star schema with fact +
+- **Data Model:** Star schema with fact +
 dimension + bridge tables
-- % ** Development :** VS Code for SQL editing +
+- **Development:** VS Code for SQL editing +
 Terminal for DuckDB CLI
-** Version Control :** Git/GitHub for versioned
+- **Version Control:** Git/GitHub for versioned
 SQL scripts
 ## Analysis Overview
+
+
 ### Query Structure
 
 1. **[Top Demanded Skills](./01_top_demanded_skills.sql)** - Identifies the 10 most in-demand skills for remote data engineer positions.
